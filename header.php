@@ -37,6 +37,12 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+      
+      }
+      
+      h1,h2,h3,h4 {
+
+        color:black;
       }
 
       @media (min-width: 768px) {
@@ -58,7 +64,7 @@
   <!-- Gestion de la navbar (bare de navigation) -->
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Ma Bibliothèque</a>
+  <a class="navbar-brand" href="index.php">Ma Bibliothèque</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -87,7 +93,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion des Nationalité</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
           <a class="dropdown-item" href="listeNationalites.php">Liste des nationalités</a>
-          <a class="dropdown-item" href="#">Ajouter des Nationalités</a>
+          <a class="dropdown-item" href="formAjoutNationalite.php">Ajouter des Nationalités</a>
           
         </div>
       </li>
