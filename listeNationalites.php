@@ -34,12 +34,14 @@
     echo "<td class='col-md-8'>$nationalite->libelle</td>";
     echo "<td class='col-md-2'>
     <a href='formNationalite.php?action=Modifier&num=$nationalite->num ' class='btn btn-primary'><i class='fas fa-pen'></i></a>
-    <a href='' class='btn btn-primary'><i class='far fa-trash-alt'></i></a>
+    <a href='#modalsup'  data-suppression='supprimeNationalite.php?num=$nationalite->num' date-message='Voulez vous supprimer cette nationalités ?' data-toggle='modal' class='btn btn-primary'><i class='far fa-trash-alt'></i></a>
     </td>";
    
   echo "</tr>";
 
   }
+  //supprimeNationalite.php?num=$nationalite->num
+   
   ?>
    
    
@@ -55,6 +57,9 @@
 
   
 </main>
+
+
+
 
 <?php include "footer.php";
 
